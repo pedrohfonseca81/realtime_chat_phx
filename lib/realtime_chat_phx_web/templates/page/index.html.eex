@@ -1,0 +1,16 @@
+<div class="root">
+  <div class="box">
+    <div id="messages">
+    <%= for item <- @messages do %>
+      <p><%= item.nickname %>: <%= item.message %></p>
+    <% end %>
+    </div>
+  </div>
+  <div class="box send_message_box">
+    <form class="send_message">
+      <input id="nickname" autocomplete="off" placeholder="Apelido" />
+      <input id="message" autocomplete="off" placeholder="Message" />
+      <button type="submit">send</button>
+    </form>
+  </div
+</div>
