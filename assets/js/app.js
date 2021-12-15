@@ -3,8 +3,6 @@ import socket from "./socket";
 import { NEW_MESSAGE, RECEIVED_MESSAGE } from "./constants";
 import "../css/app.scss";
 
-console.log(socket.isConnected());
-
 const rootMessagesDiv = document.getElementById("messages");
 const form = document.querySelector(".send_message");
 
